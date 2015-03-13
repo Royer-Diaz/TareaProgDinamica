@@ -52,6 +52,7 @@ $(document).ready(function () {
 
     Vehiculos.push(nuevoVehiculo);
 
+
     refrescarTabla();
     // $('#form-vehiculo input').val('');
   });

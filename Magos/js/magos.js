@@ -9,8 +9,11 @@ var Mago_Blanco = function (_id. _nombre) {
   Mago.call(this, _id. _nombre, "Tus Tropas han sido Curadas!");
 
   this.getTipo = function () {
-    return "Mago_Blanco";
+      return "Mago_Blanco";
   };
+  this.getEspecialidad = function(){
+      return "Curacion"
+  }
 };
 
 Mago_Blanco.prototype = new Mago();
@@ -22,6 +25,9 @@ var Mago_Negro = function (_id. _nombre) {
   this.getTipo = function () {
     return "Mago_Negro";
   };
+ this.getEspecialidad = function(){
+    return "Curacion";
+ }
 };
 
 Mago_Negro.prototype = new Mago();
