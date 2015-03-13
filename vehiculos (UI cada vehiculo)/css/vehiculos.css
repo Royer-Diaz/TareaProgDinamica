@@ -1,0 +1,25 @@
+#form-vehiculo {
+  display: none;
+  z-index: 100;
+}
+
+#form-container {
+  position: relative;
+  min-height: 50px;
+}
+
+#form-container p {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#tabla-vehiculo tr td .delete {
+  cursor: pointer;
+  color: red;
+}
+
+
+#un-vehiculo {
+  clear: both;
+}

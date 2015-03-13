@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- http://www.sitepoint.com/a-minimal-html-document-html5-edition/ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="css/vehiculos.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/vehiculos.js"></script>
+    <script type="text/javascript" src="js/util/jquery.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+  </head>
+  <body class="container col-lg-8 col-lg-offset-2">
+    <h1 class="page-header">Vehiculos</h1>
+
+    <div id="form-container">
+      <form class="form-horizontal well bs-component col-lg-6" id="form-vehiculo">
+
+        <fieldset>
+
+          <div class="form-group">
+            <label for="select-tipo" class="col-lg-3 control-label">Tipo</label>
+            <div class="col-lg-9">
+              <select class="form-control" id="select-tipo">
+              <option value="automovil">Autom&oacute;vil</option>
+              <option value="camion">Cami&oacute;n</option>
+              <option value="moto">Moto</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input-marca" class="col-lg-3 control-label">Marca</label>
+            <div class="col-lg-9">
+              <input type="text" class="form-control" id="input-marca">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input-modelo" class="col-lg-3 control-label">Modelo</label>
+            <div class="col-lg-9">
+              <input type="text" class="form-control" id="input-modelo">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input-color" class="col-lg-3 control-label">Color</label>
+            <div class="col-lg-9">
+              <input type="text" class="form-control" id="input-color">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input-serie" class="col-lg-3 control-label">N&uacute;mero Serie</label>
+            <div class="col-lg-9">
+              <input type="text" class="form-control" id="input-serie">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input-cilindraje" class="col-lg-3 control-label">Cilindraje</label>
+            <div class="col-lg-9">
+              <input type="text" class="form-control" id="input-cilindraje">
+            </div>
+          </div>
+          <hr>
+
+          <div class="form-group">
+            <div class="col-lg-6 col-lg-offset-6">
+              <a class="btn btn-primary col-lg-5 col-lg-offset-1" href="javascript:;" id="submit-vehiculo">Crear</a>
+              <a class="btn btn-default col-lg-5 col-lg-offset-1" href="javascript:;" id="cancel-vehiculo">Cancelar</a>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <p><a id="crear-vehiculo" href="javascript:;" class="btn btn-primary">Crear Vehículo</a></p>
+
+    </div>
+
+    <table id="tabla-vehiculo" class="table table-striped table-hover bs-component col-lg-12">
+      <thead>
+        <tr>
+          <th>Tipo</th>
+          <th>Marca</th>
+          <th>Modelo</th>
+          <th>Color</th>
+          <th>N. Serie</th>
+          <th>Cilindraje</th>
+          <th>Llantas</th>
+          <th>Borrar</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
+    <div id="un-vehiculo" class="col-lg-6 col-lg-offset-3">
+      <div class="row">
+        <div id="motor" class="col-lg-6">
+          <h2>Motor</h2>
+          <p id="serie-motor">N. Serie:  <span>12345</span></p>
+          <p id="cilindraje-motor">Cilindraje:  <span>1200cc</span></p>
+          <p id="estado-motor">Encendido</p>
+          <p id="velocidad-motor"><span>55</span>km/h</p>
+        </div>
+        <div id="llantas" class="col-lg-6">
+          <h2>Llantas</h2>
+          <p class="una-llanta">[1] Rodando</p>
+          <p class="una-llanta">[2] Rodando</p>
+        </div>
+      </div>
+      <div id="dash" class="row">
+        <div id="caracts-vehiculo" class="col-lg-6">
+           <h2>Vehiculo</h2>
+          <p id="tipo-vehiculo">Tipo:  <span>Moto</span></p>
+          <p id="marca-vehiculo">Marca:  <span>Ducati</span></p>
+          <p id="modelo-vehiculo">Modelo:  <span>Diavel</span></p>
+          <p id="color-vehiculo">Color:  <span>Negra</span></p>
+        </div>
+        <div id="comandos-vehiculo" class="col-lg-6">
+           <h3>Comandos</h3>
+           <p id="comando-encender"><a>Encender</a></p>
+           <p id="comando-apagar"><a>Apagar</a></p>
+           <p id="comando-avanzar"><a>Avanzar</a></p>
+           <p id="comando-detenerse"><a>Detenerse</a></p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
